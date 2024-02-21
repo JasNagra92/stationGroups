@@ -112,6 +112,11 @@
           Stations for {{ model }}
         </div>
         <div v-else class="text-primary text-h6">Select a Group</div>
+        <div v-if="date && groupStore.find((x) => x.group_name === model)">
+          <span class="text-primary">Cuttoff Date: </span>
+          <span class="text-bold">{{ date }}</span>
+        </div>
+        <div v-else>Please select a cuttof Date and a Group</div>
         <q-list bordered class="scrollable-list">
           <q-item-section
             v-for="(regionGroup, index) in groupStore"
@@ -198,10 +203,10 @@ const confirmDeletePrompt = () => {
       model.value = " ";
     })
     .onCancel(() => {
-      console.log(">>>> Cancel");
+      console.log("Cancel");
     })
     .onDismiss(() => {
-      // console.log('I am triggered on both OK and Cancel')
+      console.log("I am triggered on both OK and Cancel");
     });
 };
 </script>
