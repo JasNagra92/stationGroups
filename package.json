@@ -1,0 +1,30 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxtjs/supabase": "^1.1.5",
+    "@types/luxon": "^3.4.0",
+    "nuxt": "^3.9.0",
+    "nuxt-quasar-ui": "^2.0.7",
+    "sass": "^1.69.7",
+    "vue": "^3.4.5",
+    "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.5.1",
+    "@quasar/extras": "^1.16.9",
+    "luxon": "^3.4.4",
+    "pinia": "^2.1.7",
+    "prettier": "^3.2.5",
+    "quasar": "^2.14.5",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.1/xlsx-0.20.1.tgz"
+  }
+}
